@@ -1,0 +1,33 @@
+{
+  "name": "test-auto",
+  "version": "1.0.0",
+  "description": "Tests automatizados con Playwright y BDD para la Consola",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright-bdd test && npx playwright test",
+    "test:login": "npx playwright-bdd test --tags @login && npx playwright test",
+    "test:menu": "npx playwright-bdd test --tags @menu && npx playwright test",
+    "ui:all": "npx playwright-bdd test && npx playwright test --ui",
+    "ui:login": "npx playwright-bdd test --tags @login && npx playwright test --ui",
+    "ui:menu": "npx playwright-bdd test --tags @menu && npx playwright test --ui",
+    "auth": "npx playwright test tests/auth.setup.ts",
+    "check:auth": "node tests/check-auth.ts",
+    "create": "node create-test.js"
+  },
+  "keywords": [
+    "playwright",
+    "bdd",
+    "testing",
+    "automation",
+    "console"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.3.1",
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.24",
+    "playwright-bdd": "^8.2.1",
+    "typescript": "^5.3.3"
+  }
+}

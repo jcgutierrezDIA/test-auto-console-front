@@ -1,0 +1,43 @@
+# Dependencias
+node_modules/
+package-lock.json
+
+# Archivos de autenticación
+playwright/.auth/
+
+# Archivos generados por Playwright
+test-results/
+playwright-report/
+.features-gen/
+screenshots/
+
+# Archivos de estado
+*.log
+*.json.user
+*.local
+
+# Archivos de entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Archivos de compilación
+dist/
+build/
+*.tsbuildinfo
+
+# Archivos temporales
+temp/
+tmp/ 
